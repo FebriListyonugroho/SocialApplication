@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileIv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_default_img"/>
+
+        <ImageView
+            android:id="@+id/onlineStatusIv"
+            android:layout_marginTop="7sp"
+            android:layout_marginLeft="3sp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="@string/nama"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/profileIv" />
+
+        <TextView
+            android:id="@+id/lastMessageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:maxLines="2"
+            android:text="@string/pesan"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/profileIv"
+            android:layout_below="@id/nameTv"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">AllRent</string>
+    <string name="btnregister">Register</string>
+    <string name="btnlogin">Login</string>
+    <string name="tvRegister">Register</string>
+    <string name="Etemail">Email</string>
+    <string name="Etpassword">Password</string>
+    <string name="TVlogin">Login</string>
+    <string name="menulogout">Logout</string>
+    <string name="forgot_password_recover">Forgot Password? Recover</string>
+    <string name="not_have_account_register">Not have account? Register</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="masukan_pesan">Masukan pesan</string>
+    <string name="judul">Judul</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="upload">Upload</string>
+    <string name="name">Name</string>
+    <string name="title">Title</string>
+    <string name="deskripsi_postingan">Deskripsi postingan</string>
+    <string name="_1_2k_likes">1.2k Likes</string>
+    <string name="like">Like</string>
+    <string name="komentar">Komentar</string>
+    <string name="bagikan">bagikan</string>
+    <string name="suka">Suka</string>
+    <string name="_1_2k_komentar">1.2k Komentar</string>
+    <string name="user">User</string>
+    <string name="nama">Nama</string>
+    <string name="pesan">Pesan</string>
+    <string name="profile">Profile</string>
+    <string name="unggah_foto">Unggah Foto</string>
+    <string name="harga_sewa">Harga Sewa</string>
+    <string name="garisng">/</string>
+    <string name="pilih_kategori_barang_sewa">Pilih Kategori Barang Sewa</string>
+    <string name="lupa_password">Lupa Password?</string>
+    <string name="tidak_memiliki_akun">Tidak Memiliki Akun?</string>
+
+    <string-array name="mass">
+        <item>Jam</item>
+        <item>Hari</item>
+        <item>Minggu</item>
+        <item>Bulan</item>
+        <item>Tahun</item>
+    </string-array>
+
+    <string-array name="kategory_sewa">
+        <item>Rumah</item>
+        <item>Kendaraan</item>
+        <item>Jasa</item>
+        <item>Elektronik</item>
+        <item>Fashion Wanita</item>
+        <item>Fashion Pria</item>
+    </string-array>
+</resources>

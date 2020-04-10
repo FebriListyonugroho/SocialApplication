@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--di sini Anda dapat mendefinisikan banyak-->
+
+    <!--menggunakan direktori cache-->
+    <cache-path
+        name="shared_images"
+        path="images/"/>
+
+</paths>

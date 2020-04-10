@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorWhite">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <View
+                android:background="@color/bg_place_holder"
+                android:scaleType="centerCrop"
+                android:layout_gravity="start"
+                android:layout_width="170dp"
+                android:layout_height="210dp"/>
+
+
+            <View
+                android:background="@color/bg_place_holder"
+                android:textColor="@color/colorBlack"
+                android:layout_width="170dp"
+                android:layout_gravity="end"
+                android:layout_height="210sp"/>
+
+
+        </GridLayout>
+
+
+
+</LinearLayout>

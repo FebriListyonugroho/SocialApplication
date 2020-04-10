@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EDED"
+    tools:context=".Fragment.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/coverIv"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:background="@color/bg_place_holder">
+
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="100dp">
+
+                <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                    android:id="@+id/avatarIv"
+                    android:layout_marginStart="10dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="20sp"
+                    android:src="@drawable/ic_default_img"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical"
+                    android:background="@null">
+
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5sp"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:id="@+id/emailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:id="@+id/phoneTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <!--Recycler View post-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_posts"
+            android:layout_below="@id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.socialapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.example.socialapplication.Activity.PostDetailActivity"></activity>
+        <activity android:name="com.example.socialapplication.Activity.ThereProfileActivity" />
+        <activity android:name="com.example.socialapplication.Activity.AddPostActivity" />
+        <activity
+            android:name="com.example.socialapplication.Activity.ChatActivity"
+            android:theme="@style/AppThemeNo" />
+        <activity android:name="com.example.socialapplication.Activity.LoginActivity"
+            android:theme="@style/AppThemeNo" />
+        <activity android:name="com.example.socialapplication.Activity.DashboardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.socialapplication.Activity.RegisterActivity"
+            android:theme="@style/AppThemeNo"/>
+        <activity android:name="com.example.socialapplication.Activity.MainActivity"
+                  android:theme="@style/AppThemeNo"/>
+        <service
+            android:name="com.example.socialapplication.Notification.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:authorities="com.example.socialapplication.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+
+    </application>
+
+</manifest>
